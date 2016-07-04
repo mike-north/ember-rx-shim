@@ -1,36 +1,33 @@
----
 language: node_js
 node_js:
-  - "4"
-
+- '4'
 sudo: false
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 env:
-  - EMBER_TRY_SCENARIO=default
-  - EMBER_TRY_SCENARIO=ember-1.13
-  - EMBER_TRY_SCENARIO=ember-release
-  - EMBER_TRY_SCENARIO=ember-beta
-  - EMBER_TRY_SCENARIO=ember-canary
-
+- EMBER_TRY_SCENARIO=default
+- EMBER_TRY_SCENARIO=ember-1.13
+- EMBER_TRY_SCENARIO=ember-release
+- EMBER_TRY_SCENARIO=ember-beta
+- EMBER_TRY_SCENARIO=ember-canary
 matrix:
   fast_finish: true
   allow_failures:
-    - env: EMBER_TRY_SCENARIO=ember-canary
-
+  - env: EMBER_TRY_SCENARIO=ember-canary
 before_install:
-  - npm config set spin false
-  - npm install -g bower
-  - npm install phantomjs-prebuilt
-
+- npm config set spin false
+- npm install -g bower
+- npm install phantomjs-prebuilt
 install:
-  - npm install
-  - bower install
-
+- npm install
+- bower install
 script:
-  # Usually, it's ok to finish the test scenario without reverting
-  #  to the addon's original dependency state, skipping "cleanup".
-  - ember try $EMBER_TRY_SCENARIO test --skip-cleanup
+- ember try $EMBER_TRY_SCENARIO test --skip-cleanup
+deploy:
+  provider: heroku
+  api_key:
+    secure: BTMx9wceSvA4eWYTym0EK2oSyEwRh6gp1eeRYSiPqA4rAF75hf4/EgH+k85wbUMIXVYUvqHABnzRQl3TfFQOLOCkyxUBPuRhD78ApYsJwLFpZhhKg6BvDf9yxVo7qlnNr83/iYjd+B16QLwoXv972OmIdOhCyg3PJZWrHXl9GPB2J/E5yUHH1YMideqe1S5vt2LP4jjE2KT8d4OcYILgbq5WFVl/ML7WstjUULFYnAufuoxJ4R9TVeB4dlfwZ4aCp/zBW+WrQVkgwAwl+KF4ovmYKnt+UlDvV9FeZYEgTpW6uadoV/6cptSdxE6/NoCkOdGdzUQ38cV4cJLJsMC6nVqb46k1rlycQccfD2euqtpzzY8eHR/fy2Affx4aW8E2n67k1TC159VIBCmqOmFfHJxn1B+IxD70+qQ2/fzhY4T2JUyk9ALJX+g0j3i03ySU37bocwpwEfqZ52pn2fS2sYWUjDS5+vN40bVl9/7teLPehFgiOJja3bN/rVl7VoIOLDNzxM+71tNaa85Ecg2KPo7lwwcSEqhRFDGfI4T9ABiXx1DQfWufwUSG7RRVzNjU/nbdmcerp1+xYj5YnX6VKxXujLcR02eB0tXJAi0njRESPxWYWEIR4J4qc1vDzVevRkHBkhXNPdNrm2V66H4uy9EVzNqmDcH8bB0xDfQW858=
+  app: ember-rx-shim-demo
+  on:
+    repo: mike-north/ember-rx-shim

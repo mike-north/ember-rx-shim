@@ -56,6 +56,7 @@
     "rxjs-es": "^5.0.0-beta.9"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://ember-rx-shim-demo.herokuapp.com/"
   }
 }

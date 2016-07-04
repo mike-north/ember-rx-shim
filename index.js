@@ -41,35 +41,35 @@ RxHack.prototype.processString = function(content, relativePath) {
       "let Scheduler = {\n    asap: asap,\n    async: async,\n    queue: queue,\n    animationFrame: animationFrame\n};");
 };
 
-/**
-  A simple broccoli filter to transform a commonjs module into
-  a require.js module with a single default export. This also
-  takes care of a small module-remapping task.
- */
-RequireWrapper.prototype = Object.create(Filter.prototype);
-RequireWrapper.prototype.constructor = RequireWrapper;
-function RequireWrapper(inputNode) {
-  Filter.call(this, inputNode);
-}
+// /**
+//   A simple broccoli filter to transform a commonjs module into
+//   a require.js module with a single default export. This also
+//   takes care of a small module-remapping task.
+//  */
+// RequireWrapper.prototype = Object.create(Filter.prototype);
+// RequireWrapper.prototype.constructor = RequireWrapper;
+// function RequireWrapper(inputNode) {
+//   Filter.call(this, inputNode);
+// }
 
-RequireWrapper.prototype.extensions = ['js'];
-RequireWrapper.prototype.targetExtension = 'js';
+// RequireWrapper.prototype.extensions = ['js'];
+// RequireWrapper.prototype.targetExtension = 'js';
 
-RequireWrapper.prototype.processString = function(content, relativePath) {
-  var moduleName = relativePath.split('.')[0];
-  if (content.indexOf('module.exports') >= 0) {
-    return 'define(\'' + moduleName + '\', [], function() {\n\n' +
-      '\nvar module = {exports: undefined};\n' +
-      '\nvar global = window;' +
-      '\n\n' + content.replace('\./ponyfill' ,'symbol-observable/ponyfill') + '\n' +
-      '\nreturn module.exports;' + 
-      '\n\n});';    
-  }
-  else {
-    return content;
-  }
+// RequireWrapper.prototype.processString = function(content, relativePath) {
+//   var moduleName = relativePath.split('.')[0];
+//   if (content.indexOf('module.exports') >= 0) {
+//     return 'define(\'' + moduleName + '\', [], function() {\n\n' +
+//       '\nvar module = {exports: undefined};\n' +
+//       '\nvar global = window;' +
+//       '\n\n' + content.replace('\./ponyfill' ,'symbol-observable/ponyfill') + '\n' +
+//       '\nreturn module.exports;' + 
+//       '\n\n});';    
+//   }
+//   else {
+//     return content;
+//   }
 
-};
+// };
 
 module.exports = {
   name: 'rxjs',

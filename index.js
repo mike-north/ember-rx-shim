@@ -73,10 +73,7 @@ RequireWrapper.prototype.processString = function(content, relativePath) {
 
 module.exports = {
   name: 'rxjs',
-  included: function(app) {
-    app.import('vendor/symbol-observable/ponyfill.js');
-    this._super.included.call(this, app);
-  },
+  
   treeForAddon: function(tree) {
     var rxPath = path.dirname(require.resolve('rxjs-es'));
     var rxTree = stew.find(rxPath, {
@@ -85,29 +82,5 @@ module.exports = {
     
     var trees = mergeTrees([tree, new RxHack(rxTree)]);
     return this._super.treeForAddon.call(this, trees);
-  },
-  treeForVendor: function(tree) {
-    /**
-     * Add the symbol-observable polyfill, taking care to 
-      not add a "ponyfill.js" to the root vendor namespace (it's
-      likely to clash w/ something else!)
-    */
-    var soPath = path.dirname(require.resolve('symbol-observable/index.js'));
-    var soTree = stew.rename(stew.find(soPath, {
-      include: ['**/*.js']
-    }), function(relPath) {
-      switch (relPath) {
-        case 'index.js':
-          return 'symbol-observable/____index.js';
-        case 'ponyfill.js':
-          return 'symbol-observable/ponyfill.js';
-        default:
-          return relPath;
-      }
-    });
-    var trees = mergeTrees([tree, new RequireWrapper(soTree)]);
-
-    return this._super.treeForVendor.call(this, trees);
-
   }
 };

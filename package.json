@@ -1,7 +1,7 @@
 {
   "name": "ember-rx-shim",
   "version": "0.1.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A simple addon for adding RxJS 5 to your Ember.js app.",
   "directories": {
     "doc": "doc",
     "test": "tests"

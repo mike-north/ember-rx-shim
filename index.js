@@ -75,7 +75,6 @@ module.exports = {
   name: 'rxjs',
   included: function(app) {
     app.import('vendor/symbol-observable/ponyfill.js');
-    app.import('vendor/symbol-observable/index.js');
     this._super.included.call(this, app);
   },
   treeForAddon: function(tree) {
@@ -99,7 +98,7 @@ module.exports = {
     }), function(relPath) {
       switch (relPath) {
         case 'index.js':
-          return 'symbol-observable/index.js';
+          return 'symbol-observable/____index.js';
         case 'ponyfill.js':
           return 'symbol-observable/ponyfill.js';
         default:

@@ -41,7 +41,12 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "rxjs",
+    "reactive",
+    "streaming",
+    "frp",
+    "functional"
   ],
   "dependencies": {
     "broccoli-cjs-wrap": "0.0.6",

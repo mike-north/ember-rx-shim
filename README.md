@@ -1,6 +1,6 @@
-# ember-rx-shim
+# ember-rx-shim [![Build Status](https://travis-ci.org/mike-north/ember-rx-shim.svg?branch=master)](https://travis-ci.org/mike-north/ember-rx-shim)
 
-A simple addon for adding [RxJS 5](https://github.com/ReactiveX/rxjs#rxjs-5-beta) to your Ember.js app.
+A simple addon for adding [RxJS 5](https://github.com/ReactiveX/rxjs#rxjs-5-beta) to your Ember.js app. 
 
 ### Purpose
 

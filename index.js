@@ -5,7 +5,6 @@
 var stew = require('broccoli-stew');
 var path = require('path');
 var mergeTrees = require('broccoli-merge-trees');
-var cjsWrap = require('broccoli-cjs-wrap');
 var Filter = require('broccoli-filter');
 
 /**

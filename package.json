@@ -36,14 +36,20 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.1",
+    "ember-suave": "3.0.1",
+    "ember-sublime": "0.0.9",
     "loader.js": "^4.0.1"
   },
   "keywords": [
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.6"
+    "broccoli-cjs-wrap": "0.0.6",
+    "broccoli-filter": "^1.2.3",
+    "broccoli-merge-trees": "^1.1.1",
+    "broccoli-stew": "^1.3.1",
+    "ember-cli-babel": "^5.1.6",
+    "rxjs-es": "^5.0.0-beta.9"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

@@ -1,8 +1,33 @@
-# Ember-rx-shim
+# ember-rx-shim
 
-This README outlines the details of collaborating on this Ember addon.
+A simple addon for adding [RxJS 5](https://github.com/ReactiveX/rxjs#rxjs-5-beta) to your Ember.js app.
+
+### Purpose
+
+This only makes the library available for consumption as ES6 modules, and will, in the future, be responsible for the most basic level of integration. Anything further should be accomplished via other addons that bring this one in as a dependency.
 
 ## Installation
+
+You can install this addon using ember-cli
+```
+ember install ember-rx-shim
+```
+
+## Use
+
+RxJS may be imported as ES6 modules
+
+```js
+import Rx from 'rxjs/Rx';
+
+let observable = new Rx.Observable((observer) => {
+  ...
+});
+
+```
+
+
+## Contributing
 
 * `git clone` this repository
 * `npm install`

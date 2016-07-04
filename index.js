@@ -56,7 +56,6 @@ RequireWrapper.prototype.extensions = ['js'];
 RequireWrapper.prototype.targetExtension = 'js';
 
 RequireWrapper.prototype.processString = function(content, relativePath) {
-  console.log('relativePath', relativePath);
   var moduleName = relativePath.split('.')[0];
   if (content.indexOf('module.exports') >= 0) {
     return 'define(\'' + moduleName + '\', [], function() {\n\n' +
@@ -76,7 +75,7 @@ module.exports = {
   name: 'rxjs',
   included: function(app) {
     app.import('vendor/symbol-observable/ponyfill.js');
-    app.import('vendor/symbol-observable.js');
+    app.import('vendor/symbol-observable/index.js');
     this._super.included.call(this, app);
   },
   treeForAddon: function(tree) {
@@ -100,7 +99,7 @@ module.exports = {
     }), function(relPath) {
       switch (relPath) {
         case 'index.js':
-          return 'symbol-observable.js';
+          return 'symbol-observable/index.js';
         case 'ponyfill.js':
           return 'symbol-observable/ponyfill.js';
         default:

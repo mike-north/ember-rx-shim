@@ -33,9 +33,9 @@ alter@~0.2.0:
   dependencies:
     stable "~0.1.3"
 
-amd-name-resolver@0.0.5:
-  version "0.0.5"
-  resolved "http://localhost:8080/amd-name-resolver/-/amd-name-resolver-0.0.5.tgz#76962dac876ed3311b05d29c6a58c14e1ef3304b"
+amd-name-resolver@0.0.6:
+  version "0.0.6"
+  resolved "http://localhost:8080/amd-name-resolver/-/amd-name-resolver-0.0.6.tgz#d3e4ba2dfcaab1d820c1be9de947c67828cfe595"
   dependencies:
     ensure-posix-path "^1.0.1"
 
@@ -423,6 +423,12 @@ bl@~1.0.0:
   dependencies:
     readable-stream "~2.0.5"
 
+bl@~1.1.2:
+  version "1.1.2"
+  resolved "http://localhost:8080/bl/-/bl-1.1.2.tgz#fdca871a99713aa00d19e3bbba41c44787a65398"
+  dependencies:
+    readable-stream "~2.0.5"
+
 blank-object@^1.0.1:
   version "1.0.2"
   resolved "http://localhost:8080/blank-object/-/blank-object-1.0.2.tgz#f990793fbe9a8c8dd013fb3219420bec81d5f4b9"
@@ -431,15 +437,9 @@ blob@0.0.4:
   version "0.0.4"
   resolved "http://localhost:8080/blob/-/blob-0.0.4.tgz#bcf13052ca54463f30f9fc7e95b9a47630a94921"
 
-block-stream@*:
+block-stream@*, block-stream@0.0.9:
   version "0.0.9"
   resolved "http://localhost:8080/block-stream/-/block-stream-0.0.9.tgz#13ebfe778a03205cfe03751481ebb4b3300c126a"
-  dependencies:
-    inherits "~2.0.0"
-
-block-stream@0.0.8:
-  version "0.0.8"
-  resolved "http://localhost:8080/block-stream/-/block-stream-0.0.8.tgz#0688f46da2bbf9cff0c4f68225a0cb95cbe8a46b"
   dependencies:
     inherits "~2.0.0"
 
@@ -537,6 +537,22 @@ broccoli-babel-transpiler@^5.4.5, broccoli-babel-transpiler@^5.5.0, broccoli-bab
     hash-for-dep "^1.0.2"
     json-stable-stringify "^1.0.0"
 
+broccoli-brocfile-loader@^0.18.0:
+  version "0.18.0"
+  resolved "http://localhost:8080/broccoli-brocfile-loader/-/broccoli-brocfile-loader-0.18.0.tgz#2e86021c805c34ffc8d29a2fb721cf273e819e4b"
+  dependencies:
+    findup-sync "^0.4.2"
+
+broccoli-builder@^0.18.0:
+  version "0.18.0"
+  resolved "http://localhost:8080/broccoli-builder/-/broccoli-builder-0.18.0.tgz#55d1971916fb13553cf29b395d12820ad3c5f833"
+  dependencies:
+    heimdalljs "^0.2.0"
+    promise-map-series "^0.2.1"
+    quick-temp "^0.1.2"
+    rimraf "^2.2.8"
+    rsvp "^3.0.17"
+
 broccoli-caching-writer@^2.0.4, broccoli-caching-writer@^2.2.0, broccoli-caching-writer@^2.3.1:
   version "2.3.1"
   resolved "http://localhost:8080/broccoli-caching-writer/-/broccoli-caching-writer-2.3.1.tgz#b93cf58f9264f003075868db05774f4e7f25bd07"
@@ -603,7 +619,7 @@ broccoli-funnel-reducer@^1.0.0:
   version "1.0.0"
   resolved "http://localhost:8080/broccoli-funnel-reducer/-/broccoli-funnel-reducer-1.0.0.tgz#11365b2a785aec9b17972a36df87eef24c5cc0ea"
 
-broccoli-funnel@^1.0.0, broccoli-funnel@^1.0.1:
+broccoli-funnel@^1.0.0, broccoli-funnel@^1.0.1, broccoli-funnel@^1.0.6:
   version "1.0.8"
   resolved "http://localhost:8080/broccoli-funnel/-/broccoli-funnel-1.0.8.tgz#48af6688314561b27898580e23cf6b925951e5c6"
   dependencies:
@@ -673,7 +689,7 @@ broccoli-kitchen-sink-helpers@^0.3.1:
     glob "^5.0.10"
     mkdirp "^0.5.1"
 
-broccoli-merge-trees@^1.0.0, broccoli-merge-trees@^1.1.0, broccoli-merge-trees@^1.1.1:
+broccoli-merge-trees@^1.0.0, broccoli-merge-trees@^1.1.0, broccoli-merge-trees@^1.1.1, broccoli-merge-trees@^1.1.3:
   version "1.1.4"
   resolved "http://localhost:8080/broccoli-merge-trees/-/broccoli-merge-trees-1.1.4.tgz#ab9eafd30b0dd8136e882ffd8fb08f3817533ea0"
   dependencies:
@@ -685,6 +701,13 @@ broccoli-merge-trees@^1.0.0, broccoli-merge-trees@^1.1.0, broccoli-merge-trees@^
     heimdalljs-logger "^0.1.7"
     rimraf "^2.4.3"
     symlink-or-copy "^1.0.0"
+
+broccoli-middleware@^0.18.1:
+  version "0.18.1"
+  resolved "http://localhost:8080/broccoli-middleware/-/broccoli-middleware-0.18.1.tgz#bf525581c2deb652c425942b18580f76d3748122"
+  dependencies:
+    handlebars "^4.0.4"
+    mime "^1.2.11"
 
 broccoli-module-alchemist-install@^0.1.1:
   version "0.1.6"
@@ -728,18 +751,11 @@ broccoli-plugin@1.1.0:
     rimraf "^2.3.4"
     symlink-or-copy "^1.0.1"
 
-broccoli-sane-watcher@^1.1.1:
-  version "1.1.5"
-  resolved "http://localhost:8080/broccoli-sane-watcher/-/broccoli-sane-watcher-1.1.5.tgz#f2b0af9cf0afb74c7a49cd88eb11c6869ee8c0c0"
+broccoli-slow-trees@^3.0.1:
+  version "3.0.1"
+  resolved "http://localhost:8080/broccoli-slow-trees/-/broccoli-slow-trees-3.0.1.tgz#9bf2a9e2f8eb3ed3a3f2abdde988da437ccdc9b4"
   dependencies:
-    broccoli-slow-trees "^1.1.0"
-    debug "^2.1.0"
-    rsvp "^3.0.18"
-    sane "^1.1.1"
-
-broccoli-slow-trees@^1.0.0, broccoli-slow-trees@^1.1.0:
-  version "1.1.0"
-  resolved "http://localhost:8080/broccoli-slow-trees/-/broccoli-slow-trees-1.1.0.tgz#426c5724e008107e4573f73e8a9ca702916b78f7"
+    heimdalljs "^0.2.1"
 
 broccoli-source@^1.1.0:
   version "1.1.0"
@@ -784,10 +800,6 @@ broccoli-uglify-sourcemap@^1.0.0:
     symlink-or-copy "^1.0.1"
     uglify-js "^2.6.0"
     walk-sync "^0.1.3"
-
-broccoli-viz@^2.0.1:
-  version "2.0.1"
-  resolved "http://localhost:8080/broccoli-viz/-/broccoli-viz-2.0.1.tgz#3f3ed2fb83e368aa5306fae460801dea552e40db"
 
 bser@^1.0.2:
   version "1.0.2"
@@ -999,7 +1011,7 @@ colors@^1.1.2:
   version "1.1.2"
   resolved "http://localhost:8080/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
-colors@~0.6.0-1, colors@0.6.x:
+colors@0.6.x:
   version "0.6.2"
   resolved "http://localhost:8080/colors/-/colors-0.6.2.tgz#2423fe6678ac0c5dae8852e5d0e5be08c997abcc"
 
@@ -1025,10 +1037,6 @@ commander@^2.5.0, commander@^2.6.0, commander@^2.9.0, commander@~2.9.0:
   resolved "http://localhost:8080/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
   dependencies:
     graceful-readlink ">= 1.0.0"
-
-commander@~2.1.0:
-  version "2.1.0"
-  resolved "http://localhost:8080/commander/-/commander-2.1.0.tgz#d121bbae860d9992a3d517ba96f56588e47c6781"
 
 commander@2.8.x:
   version "2.8.1"
@@ -1093,7 +1101,7 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "http://localhost:8080/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
-concat-stream@^1.4.6:
+concat-stream@^1.4.6, concat-stream@^1.4.7:
   version "1.5.2"
   resolved "http://localhost:8080/concat-stream/-/concat-stream-1.5.2.tgz#708978624d856af41a5a741defdd261da752c266"
   dependencies:
@@ -1121,15 +1129,6 @@ configstore@^2.0.0:
     uuid "^2.0.1"
     write-file-atomic "^1.1.2"
     xdg-basedir "^2.0.0"
-
-connect@^3.3.3:
-  version "3.5.0"
-  resolved "http://localhost:8080/connect/-/connect-3.5.0.tgz#b357525a0b4c1f50599cd983e1d9efeea9677198"
-  dependencies:
-    debug "~2.2.0"
-    finalhandler "0.5.0"
-    parseurl "~1.3.1"
-    utils-merge "1.0.0"
 
 console-browserify@1.1.x:
   version "1.1.0"
@@ -1342,9 +1341,9 @@ did_it_work@0.0.6:
   version "0.0.6"
   resolved "http://localhost:8080/did_it_work/-/did_it_work-0.0.6.tgz#5180cb9e16ebf9a8753a0cc6b4af9ccdff71ec05"
 
-diff@^2.2.2:
-  version "2.2.3"
-  resolved "http://localhost:8080/diff/-/diff-2.2.3.tgz#60eafd0d28ee906e4e8ff0a52c1229521033bf99"
+diff@^1.3.1:
+  version "1.4.0"
+  resolved "http://localhost:8080/diff/-/diff-1.4.0.tgz#7f28d2eb9ee7b15a97efd89ce63dcfdaa3ccbabf"
 
 dom-serializer@0:
   version "0.1.0"
@@ -1422,22 +1421,15 @@ ember-cli-babel@^5.1.10, ember-cli-babel@^5.1.3, ember-cli-babel@^5.1.5, ember-c
     ember-cli-version-checker "^1.0.2"
     resolve "^1.1.2"
 
-ember-cli-broccoli@0.16.9:
-  version "0.16.9"
-  resolved "http://localhost:8080/ember-cli-broccoli/-/ember-cli-broccoli-0.16.9.tgz#4e9128f59ffaee99705c01e9a44a691a0ae199db"
+ember-cli-broccoli-sane-watcher@^2.0.3:
+  version "2.0.3"
+  resolved "http://localhost:8080/ember-cli-broccoli-sane-watcher/-/ember-cli-broccoli-sane-watcher-2.0.3.tgz#756163e08cdbb012a3421a1eb695497a834d351b"
   dependencies:
-    broccoli-kitchen-sink-helpers "^0.2.5"
-    broccoli-slow-trees "^1.0.0"
-    commander "^2.5.0"
-    connect "^3.3.3"
-    copy-dereference "^1.0.0"
-    findup-sync "^0.2.1"
-    handlebars "^4.0.4"
-    mime "^1.2.11"
-    promise-map-series "^0.2.1"
-    quick-temp "^0.1.2"
-    rimraf "^2.2.8"
-    rsvp "^3.0.17"
+    broccoli-slow-trees "^3.0.1"
+    heimdalljs "^0.2.1"
+    heimdalljs-logger "^0.1.7"
+    rsvp "^3.0.18"
+    sane "^1.1.1"
 
 ember-cli-dependency-checker@^1.2.0:
   version "1.3.0"
@@ -1505,7 +1497,7 @@ ember-cli-jshint@^1.0.0:
   dependencies:
     broccoli-jshint "^1.0.0"
 
-ember-cli-legacy-blueprints@^0.1.0:
+ember-cli-legacy-blueprints@^0.1.1:
   version "0.1.2"
   resolved "http://localhost:8080/ember-cli-legacy-blueprints/-/ember-cli-legacy-blueprints-0.1.2.tgz#802aee80b2ef18a24533c0f05cfcb5ad009aa471"
   dependencies:
@@ -1526,7 +1518,7 @@ ember-cli-legacy-blueprints@^0.1.0:
     rsvp "^3.0.17"
     silent-error "^1.0.0"
 
-ember-cli-lodash-subset@^1.0.7:
+ember-cli-lodash-subset@^1.0.1, ember-cli-lodash-subset@^1.0.7:
   version "1.0.11"
   resolved "http://localhost:8080/ember-cli-lodash-subset/-/ember-cli-lodash-subset-1.0.11.tgz#0149eef9c0c3505ba44ed202f8d034ddbbfb2826"
 
@@ -1540,16 +1532,16 @@ ember-cli-path-utils@^1.0.0:
   version "1.0.0"
   resolved "http://localhost:8080/ember-cli-path-utils/-/ember-cli-path-utils-1.0.0.tgz#4e39af8b55301cddc5017739b77a804fba2071ed"
 
-ember-cli-preprocess-registry@^2.0.0:
-  version "2.0.0"
-  resolved "http://localhost:8080/ember-cli-preprocess-registry/-/ember-cli-preprocess-registry-2.0.0.tgz#45c8b985eba06bb443b3abce1c3c6220fdcb8094"
+ember-cli-preprocess-registry@^3.0.0:
+  version "3.0.0"
+  resolved "http://localhost:8080/ember-cli-preprocess-registry/-/ember-cli-preprocess-registry-3.0.0.tgz#5a7e6a4048a895856c8a54ed145cf92153b2ab96"
   dependencies:
     broccoli-clean-css "^1.1.0"
     broccoli-funnel "^1.0.0"
     broccoli-merge-trees "^1.0.0"
     debug "^2.2.0"
     exists-sync "0.0.3"
-    lodash "^3.10.0"
+    lodash "^4.5.0"
     process-relative-require "^1.0.0"
     silent-error "^1.0.0"
 
@@ -1617,37 +1609,39 @@ ember-cli-version-checker@^1.0.2, ember-cli-version-checker@^1.1.4, ember-cli-ve
   dependencies:
     semver "^4.2.2"
 
-ember-cli@2.6.2:
-  version "2.6.2"
-  resolved "http://localhost:8080/ember-cli/-/ember-cli-2.6.2.tgz#4311943c83e65c485c68899ec3965bcdb60319d9"
+ember-cli@2.9.1:
+  version "2.9.1"
+  resolved "http://localhost:8080/ember-cli/-/ember-cli-2.9.1.tgz#d90e400dc8edb3eff5220724ac7a49e0c44ed7bb"
   dependencies:
-    amd-name-resolver "0.0.5"
+    amd-name-resolver "0.0.6"
     bower "^1.3.12"
     bower-config "^1.3.0"
     bower-endpoint-parser "0.2.2"
     broccoli-babel-transpiler "^5.4.5"
+    broccoli-brocfile-loader "^0.18.0"
+    broccoli-builder "^0.18.0"
     broccoli-concat "^2.0.4"
     broccoli-config-loader "^1.0.0"
     broccoli-config-replace "^1.1.2"
-    broccoli-funnel "^1.0.0"
+    broccoli-funnel "^1.0.6"
     broccoli-funnel-reducer "^1.0.0"
-    broccoli-merge-trees "^1.0.0"
-    broccoli-sane-watcher "^1.1.1"
+    broccoli-merge-trees "^1.1.3"
+    broccoli-middleware "^0.18.1"
     broccoli-source "^1.1.0"
-    broccoli-viz "^2.0.1"
+    broccoli-stew "^1.2.0"
     chalk "^1.1.3"
     clean-base-url "^1.0.0"
     compression "^1.4.4"
     configstore "^2.0.0"
     core-object "^2.0.2"
-    debug "^2.1.3"
-    diff "^2.2.2"
-    ember-cli-broccoli "0.16.9"
+    diff "^1.3.1"
+    ember-cli-broccoli-sane-watcher "^2.0.3"
     ember-cli-get-component-path-option "^1.0.0"
     ember-cli-is-package-missing "^1.0.0"
-    ember-cli-legacy-blueprints "^0.1.0"
+    ember-cli-legacy-blueprints "^0.1.1"
+    ember-cli-lodash-subset "^1.0.1"
     ember-cli-normalize-entity-name "^1.0.0"
-    ember-cli-preprocess-registry "^2.0.0"
+    ember-cli-preprocess-registry "^3.0.0"
     ember-cli-string-utils "^1.0.0"
     ember-try "^0.2.2"
     escape-string-regexp "^1.0.3"
@@ -1655,47 +1649,47 @@ ember-cli@2.6.2:
     exit "^0.1.2"
     express "^4.12.3"
     filesize "^3.1.3"
-    findup "0.1.5"
-    fs-extra "0.27.0"
-    fs-monitor-stack "^1.0.2"
-    fs-tree-diff "^0.4.4"
+    find-up "^1.1.2"
+    fs-extra "0.30.0"
+    fs-tree-diff "^0.5.2"
     get-caller-file "^1.0.0"
     git-repo-info "^1.0.4"
-    glob "7.0.3"
+    glob "7.0.6"
+    heimdalljs-fs-monitor "^0.0.3"
+    heimdalljs-logger "^0.1.7"
     http-proxy "^1.9.0"
     inflection "^1.7.0"
-    inquirer "^0.12.0"
+    inquirer "^1.0.2"
     is-git-url "^0.2.0"
     isbinaryfile "^3.0.0"
-    leek "0.0.21"
-    lodash "^4.6.1"
-    markdown-it "6.0.1"
-    markdown-it-terminal "0.0.3"
-    merge-defaults "^0.2.1"
+    leek "0.0.23"
+    lodash.template "^4.2.5"
+    markdown-it "7.0.1"
+    markdown-it-terminal "0.0.4"
     minimatch "^3.0.0"
     morgan "^1.5.2"
     node-modules-path "^1.0.0"
     node-uuid "^1.4.3"
     nopt "^3.0.1"
-    npm "2.15.1"
+    npm "2.15.5"
     npm-package-arg "^4.1.1"
     ora "^0.2.0"
-    portfinder "^1.0.3"
+    portfinder "^1.0.7"
     promise-map-series "^0.2.1"
-    quick-temp "0.1.5"
+    quick-temp "0.1.6"
     resolve "^1.1.6"
     rsvp "^3.0.17"
     sane "^1.1.1"
-    semver "^5.1.0"
+    semver "^5.1.1"
     silent-error "^1.0.0"
     symlink-or-copy "^1.0.1"
     temp "0.8.3"
-    testem "^1.6.0"
+    testem "^1.8.1"
     through "^2.3.6"
     tiny-lr "0.2.1"
-    tree-sync "^1.1.0"
-    walk-sync "^0.2.6"
-    yam "0.0.19"
+    tree-sync "^1.1.4"
+    walk-sync "^0.3.0"
+    yam "0.0.22"
 
 ember-disable-prototype-extensions@^1.1.0:
   version "1.1.0"
@@ -1998,6 +1992,14 @@ extend@^3.0.0, extend@~3.0.0:
   version "3.0.0"
   resolved "http://localhost:8080/extend/-/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
 
+external-editor@^1.1.0:
+  version "1.1.1"
+  resolved "http://localhost:8080/external-editor/-/external-editor-1.1.1.tgz#12d7b0db850f7ff7e7081baf4005700060c4600b"
+  dependencies:
+    extend "^3.0.0"
+    spawn-sync "^1.0.15"
+    tmp "^0.0.29"
+
 extglob@^0.3.1:
   version "0.3.2"
   resolved "http://localhost:8080/extglob/-/extglob-0.3.2.tgz#2e18ff3d2f49ab2765cec9023f011daa8d8349a1"
@@ -2109,11 +2111,12 @@ finalhandler@0.5.0:
     statuses "~1.3.0"
     unpipe "~1.0.0"
 
-findup-sync@^0.2.1:
-  version "0.2.1"
-  resolved "http://localhost:8080/findup-sync/-/findup-sync-0.2.1.tgz#e0a90a450075c49466ee513732057514b81e878c"
+find-up@^1.1.2:
+  version "1.1.2"
+  resolved "http://localhost:8080/find-up/-/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
   dependencies:
-    glob "~4.3.0"
+    path-exists "^2.0.0"
+    pinkie-promise "^2.0.0"
 
 findup-sync@^0.3.0:
   version "0.3.0"
@@ -2121,7 +2124,7 @@ findup-sync@^0.3.0:
   dependencies:
     glob "~5.0.0"
 
-findup-sync@^0.4.0:
+findup-sync@^0.4.0, findup-sync@^0.4.2:
   version "0.4.3"
   resolved "http://localhost:8080/findup-sync/-/findup-sync-0.4.3.tgz#40043929e7bc60adf0b7f4827c4c6e75a0deca12"
   dependencies:
@@ -2129,13 +2132,6 @@ findup-sync@^0.4.0:
     is-glob "^2.0.1"
     micromatch "^2.3.7"
     resolve-dir "^0.1.0"
-
-findup@^0.1.5, findup@0.1.5:
-  version "0.1.5"
-  resolved "http://localhost:8080/findup/-/findup-0.1.5.tgz#8ad929a3393bac627957a7e5de4623b06b0e2ceb"
-  dependencies:
-    colors "~0.6.0-1"
-    commander "~2.1.0"
 
 fireworm@^0.7.0:
   version "0.7.1"
@@ -2198,7 +2194,7 @@ fs-extra@^0.24.0:
     path-is-absolute "^1.0.0"
     rimraf "^2.2.8"
 
-fs-extra@^0.26.0, fs-extra@^0.26.6:
+fs-extra@^0.26.0:
   version "0.26.7"
   resolved "http://localhost:8080/fs-extra/-/fs-extra-0.26.7.tgz#9ae1fdd94897798edab76d0918cf42d0c3184fa9"
   dependencies:
@@ -2208,7 +2204,7 @@ fs-extra@^0.26.0, fs-extra@^0.26.6:
     path-is-absolute "^1.0.0"
     rimraf "^2.2.8"
 
-fs-extra@^0.30.0:
+fs-extra@^0.30.0, fs-extra@0.30.0:
   version "0.30.0"
   resolved "http://localhost:8080/fs-extra/-/fs-extra-0.30.0.tgz#f233ffcc08d4da7d432daa449776989db1df93f0"
   dependencies:
@@ -2218,30 +2214,9 @@ fs-extra@^0.30.0:
     path-is-absolute "^1.0.0"
     rimraf "^2.2.8"
 
-fs-extra@0.27.0:
-  version "0.27.0"
-  resolved "http://localhost:8080/fs-extra/-/fs-extra-0.27.0.tgz#66d4c25d1d2c6a8dafed7718cfcffe930f13b2c0"
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^2.1.0"
-    klaw "^1.0.0"
-    path-is-absolute "^1.0.0"
-    rimraf "^2.2.8"
-
-fs-monitor-stack@^1.0.2:
-  version "1.1.1"
-  resolved "http://localhost:8080/fs-monitor-stack/-/fs-monitor-stack-1.1.1.tgz#c4038d5977939b6b4e38396d7e7cd0895a7ac6b3"
-
 fs-readdir-recursive@^0.1.0:
   version "0.1.2"
   resolved "http://localhost:8080/fs-readdir-recursive/-/fs-readdir-recursive-0.1.2.tgz#315b4fb8c1ca5b8c47defef319d073dad3568059"
-
-fs-tree-diff@^0.4.4:
-  version "0.4.4"
-  resolved "http://localhost:8080/fs-tree-diff/-/fs-tree-diff-0.4.4.tgz#f6b75d70db22c1f3b05d592270f4ed6c9c2f82dd"
-  dependencies:
-    debug "^2.2.0"
-    fast-ordered-set "^1.0.2"
 
 fs-tree-diff@^0.5.2, fs-tree-diff@^0.5.3:
   version "0.5.3"
@@ -2250,7 +2225,7 @@ fs-tree-diff@^0.5.2, fs-tree-diff@^0.5.3:
     fast-ordered-set "^1.0.2"
     heimdalljs-logger "^0.1.7"
 
-fs-vacuum@~1.2.7:
+fs-vacuum@~1.2.7, fs-vacuum@~1.2.9:
   version "1.2.9"
   resolved "http://localhost:8080/fs-vacuum/-/fs-vacuum-1.2.9.tgz#4f90193ab8ea02890995bcd4e804659a5d366b2d"
   dependencies:
@@ -2420,16 +2395,7 @@ glob@^7.0.4, glob@^7.0.5, glob@^7.1.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@~4.3.0:
-  version "4.3.5"
-  resolved "http://localhost:8080/glob/-/glob-4.3.5.tgz#80fbb08ca540f238acce5d11d1e9bc41e75173d3"
-  dependencies:
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "^2.0.1"
-    once "^1.3.0"
-
-glob@~7.0.3:
+glob@~7.0.3, glob@7.0.6:
   version "7.0.6"
   resolved "http://localhost:8080/glob/-/glob-7.0.6.tgz#211bafaf49e525b8cd93260d14ab136152b3f57a"
   dependencies:
@@ -2437,16 +2403,6 @@ glob@~7.0.3:
     inflight "^1.0.4"
     inherits "2"
     minimatch "^3.0.2"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
-
-glob@7.0.3:
-  version "7.0.3"
-  resolved "http://localhost:8080/glob/-/glob-7.0.3.tgz#0aa235931a4a96ac13d60ffac2fb877bd6ed4f58"
-  dependencies:
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "2 || 3"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
@@ -2470,7 +2426,7 @@ globals@^6.4.0:
   version "6.4.1"
   resolved "http://localhost:8080/globals/-/globals-6.4.1.tgz#8498032b3b6d1cc81eebc5f79690d8fe29fabf4f"
 
-graceful-fs@^4.1.2, graceful-fs@^4.1.3, graceful-fs@^4.1.4, graceful-fs@^4.1.6, graceful-fs@^4.1.9, graceful-fs@~4.1.2, graceful-fs@~4.1.3:
+graceful-fs@^4.1.2, graceful-fs@^4.1.3, graceful-fs@^4.1.4, graceful-fs@^4.1.6, graceful-fs@^4.1.9, graceful-fs@~4.1.2, graceful-fs@~4.1.4:
   version "4.1.9"
   resolved "http://localhost:8080/graceful-fs/-/graceful-fs-4.1.9.tgz#baacba37d19d11f9d146d3578bc99958c3787e29"
 
@@ -2552,6 +2508,12 @@ hawk@~3.1.0, hawk@~3.1.3:
     cryptiles "2.x.x"
     hoek "2.x.x"
     sntp "1.x.x"
+
+heimdalljs-fs-monitor@^0.0.3:
+  version "0.0.3"
+  resolved "http://localhost:8080/heimdalljs-fs-monitor/-/heimdalljs-fs-monitor-0.0.3.tgz#468a1afa5d31ba58fb199fcdb5b0007dca69e63d"
+  dependencies:
+    heimdalljs "^0.2.0"
 
 heimdalljs-logger@^0.1.7:
   version "0.1.7"
@@ -2691,20 +2653,21 @@ inline-source-map-comment@^1.0.5:
     sum-up "^1.0.1"
     xtend "^4.0.0"
 
-inquirer@^0.12.0:
-  version "0.12.0"
-  resolved "http://localhost:8080/inquirer/-/inquirer-0.12.0.tgz#1ef2bfd63504df0bc75785fff8c2c41df12f077e"
+inquirer@^1.0.2:
+  version "1.2.2"
+  resolved "http://localhost:8080/inquirer/-/inquirer-1.2.2.tgz#f725c1316f0020e7f3d538c8c5ad0c2732c1c451"
   dependencies:
     ansi-escapes "^1.1.0"
-    ansi-regex "^2.0.0"
     chalk "^1.0.0"
     cli-cursor "^1.0.1"
     cli-width "^2.0.0"
+    external-editor "^1.1.0"
     figures "^1.3.5"
     lodash "^4.3.0"
-    readline2 "^1.0.1"
-    run-async "^0.1.0"
-    rx-lite "^3.1.2"
+    mute-stream "0.0.6"
+    pinkie-promise "^2.0.0"
+    run-async "^2.2.0"
+    rx "^4.1.0"
     string-width "^1.0.1"
     strip-ansi "^3.0.0"
     through "^2.3.6"
@@ -2803,6 +2766,10 @@ is-posix-bracket@^0.1.0:
 is-primitive@^2.0.0:
   version "2.0.0"
   resolved "http://localhost:8080/is-primitive/-/is-primitive-2.0.0.tgz#207bab91638499c07b2adf240a41a87210034575"
+
+is-promise@^2.1.0:
+  version "2.1.0"
+  resolved "http://localhost:8080/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
 
 is-property@^1.0.0:
   version "1.0.2"
@@ -3067,18 +3034,23 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-leek@0.0.21:
-  version "0.0.21"
-  resolved "http://localhost:8080/leek/-/leek-0.0.21.tgz#09804bf70f8aefbba745f5d56d2a4debf22711ff"
+leek@0.0.23:
+  version "0.0.23"
+  resolved "http://localhost:8080/leek/-/leek-0.0.23.tgz#d44b9f55b27e22902a6603eaeec193f0c301d25f"
   dependencies:
     debug "^2.1.0"
     lodash.assign "^3.2.0"
-    request "^2.27.0"
     rsvp "^3.0.21"
 
 leven@^1.0.2:
   version "1.0.2"
   resolved "http://localhost:8080/leven/-/leven-1.0.2.tgz#9144b6eebca5f1d0680169f1a6770dcea60b75c3"
+
+linkify-it@^2.0.0:
+  version "2.0.2"
+  resolved "http://localhost:8080/linkify-it/-/linkify-it-2.0.2.tgz#994629a4adfa5a7d34e08c075611575ab9b6fcfc"
+  dependencies:
+    uc.micro "^1.0.1"
 
 linkify-it@~1.2.0:
   version "1.2.4"
@@ -3217,6 +3189,10 @@ lodash._isiterateecall@^3.0.0:
   version "3.0.9"
   resolved "http://localhost:8080/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz#5203ad7ba425fae842460e696db9cf3e6aac057c"
 
+lodash._reinterpolate@~3.0.0:
+  version "3.0.0"
+  resolved "http://localhost:8080/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
+
 lodash._root@~3.0.0:
   version "3.0.1"
   resolved "http://localhost:8080/lodash._root/-/lodash._root-3.0.1.tgz#fba1c4524c19ee9a5f8136b4609f017cf4ded692"
@@ -3312,7 +3288,7 @@ lodash.keysin@^3.0.0:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
-lodash.merge@^3.0.2, lodash.merge@^3.3.2:
+lodash.merge@^3.3.2:
   version "3.3.2"
   resolved "http://localhost:8080/lodash.merge/-/lodash.merge-3.3.2.tgz#0d90d93ed637b1878437bb3e21601260d7afe994"
   dependencies:
@@ -3328,7 +3304,7 @@ lodash.merge@^3.0.2, lodash.merge@^3.3.2:
     lodash.keysin "^3.0.0"
     lodash.toplainobject "^3.0.0"
 
-lodash.merge@^4.3.0, lodash.merge@^4.5.1:
+lodash.merge@^4.3.0, lodash.merge@^4.4.0, lodash.merge@^4.5.1:
   version "4.6.0"
   resolved "http://localhost:8080/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
 
@@ -3357,6 +3333,19 @@ lodash.pairs@^3.0.0:
 lodash.restparam@*, lodash.restparam@^3.0.0:
   version "3.6.1"
   resolved "http://localhost:8080/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
+
+lodash.template@^4.2.5:
+  version "4.4.0"
+  resolved "http://localhost:8080/lodash.template/-/lodash.template-4.4.0.tgz#e73a0385c8355591746e020b99679c690e68fba0"
+  dependencies:
+    lodash._reinterpolate "~3.0.0"
+    lodash.templatesettings "^4.0.0"
+
+lodash.templatesettings@^4.0.0:
+  version "4.1.0"
+  resolved "http://localhost:8080/lodash.templatesettings/-/lodash.templatesettings-4.1.0.tgz#2b4d4e95ba440d915ff08bc899e4553666713316"
+  dependencies:
+    lodash._reinterpolate "~3.0.0"
 
 lodash.toplainobject@^3.0.0:
   version "3.0.0"
@@ -3398,13 +3387,9 @@ lodash@^3.10.0, lodash@^3.10.1, lodash@^3.5.0, lodash@^3.7.0, lodash@^3.9.3, lod
   version "3.10.1"
   resolved "http://localhost:8080/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.14.0, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
+lodash@^4.14.0, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.5.0, lodash@^4.6.1:
   version "4.16.4"
   resolved "http://localhost:8080/lodash/-/lodash-4.16.4.tgz#01ce306b9bad1319f2a5528674f88297aeb70127"
-
-lodash@~2.4.1:
-  version "2.4.2"
-  resolved "http://localhost:8080/lodash/-/lodash-2.4.2.tgz#fadd834b9683073da179b3eae6d9c0d15053f73e"
 
 lodash@3.7.x:
   version "3.7.0"
@@ -3414,18 +3399,12 @@ longest@^1.0.1:
   version "1.0.1"
   resolved "http://localhost:8080/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-lru-cache@^4.0.1:
+lru-cache@^4.0.1, lru-cache@~4.0.1:
   version "4.0.1"
   resolved "http://localhost:8080/lru-cache/-/lru-cache-4.0.1.tgz#1343955edaf2e37d9b9e7ee7241e27c4b9fb72be"
   dependencies:
     pseudomap "^1.0.1"
     yallist "^2.0.0"
-
-lru-cache@~3.2.0:
-  version "3.2.0"
-  resolved "http://localhost:8080/lru-cache/-/lru-cache-3.2.0.tgz#71789b3b7f5399bec8565dda38aa30d2a097efee"
-  dependencies:
-    pseudomap "^1.0.1"
 
 lru-cache@2:
   version "2.7.3"
@@ -3441,9 +3420,9 @@ makeerror@1.0.x:
   dependencies:
     tmpl "1.0.x"
 
-markdown-it-terminal@0.0.3:
-  version "0.0.3"
-  resolved "http://localhost:8080/markdown-it-terminal/-/markdown-it-terminal-0.0.3.tgz#c77a8533c2170b46d2a907a3c3452d4d7f4aa5db"
+markdown-it-terminal@0.0.4:
+  version "0.0.4"
+  resolved "http://localhost:8080/markdown-it-terminal/-/markdown-it-terminal-0.0.4.tgz#3f2ce624ba2ca964a78b8b388d605ee330de9ced"
   dependencies:
     ansi-styles "^2.1.0"
     cardinal "^0.5.0"
@@ -3461,15 +3440,15 @@ markdown-it@^4.4.0:
     mdurl "~1.0.0"
     uc.micro "^1.0.0"
 
-markdown-it@6.0.1:
-  version "6.0.1"
-  resolved "http://localhost:8080/markdown-it/-/markdown-it-6.0.1.tgz#94a6b254cf4e620bad2b226274bfeed95af1c7c5"
+markdown-it@7.0.1:
+  version "7.0.1"
+  resolved "http://localhost:8080/markdown-it/-/markdown-it-7.0.1.tgz#f12d8b88a93e64254348dfd183bd70bf60567a42"
   dependencies:
     argparse "^1.0.7"
     entities "~1.1.1"
-    linkify-it "~1.2.0"
-    mdurl "~1.0.1"
-    uc.micro "^1.0.0"
+    linkify-it "^2.0.0"
+    mdurl "^1.0.1"
+    uc.micro "^1.0.1"
 
 marked-terminal@^1.6.2:
   version "1.7.0"
@@ -3501,7 +3480,7 @@ md5-o-matic@^0.1.1:
   version "0.1.1"
   resolved "http://localhost:8080/md5-o-matic/-/md5-o-matic-0.1.1.tgz#822bccd65e117c514fab176b25945d54100a03c3"
 
-mdurl@~1.0.0, mdurl@~1.0.1:
+mdurl@^1.0.1, mdurl@~1.0.0:
   version "1.0.1"
   resolved "http://localhost:8080/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
 
@@ -3514,12 +3493,6 @@ memory-streams@^0.1.0:
   resolved "http://localhost:8080/memory-streams/-/memory-streams-0.1.0.tgz#bec658a71e3f28b0f0c2f1b14501c2db547d5f7a"
   dependencies:
     readable-stream "~1.0.2"
-
-merge-defaults@^0.2.1:
-  version "0.2.1"
-  resolved "http://localhost:8080/merge-defaults/-/merge-defaults-0.2.1.tgz#dd42248eb96bb6a51521724321c72ff9583dde80"
-  dependencies:
-    lodash "~2.4.1"
 
 merge-descriptors@1.0.1:
   version "1.0.1"
@@ -3608,10 +3581,6 @@ mkdirp@~0.4.0:
   dependencies:
     minimist "0.0.8"
 
-mktemp@~0.3.4:
-  version "0.3.5"
-  resolved "http://localhost:8080/mktemp/-/mktemp-0.3.5.tgz#a1504c706d0d2b198c6a0eb645f7fdaf8181f7de"
-
 mktemp@~0.4.0:
   version "0.4.0"
   resolved "http://localhost:8080/mktemp/-/mktemp-0.4.0.tgz#6d0515611c8a8c84e484aa2000129b98e981ff0b"
@@ -3648,13 +3617,9 @@ mustache@^2.2.1:
   version "2.2.1"
   resolved "http://localhost:8080/mustache/-/mustache-2.2.1.tgz#2c40ca21c278f53150682bcf9090e41a3339b876"
 
-mute-stream@~0.0.4:
+mute-stream@~0.0.4, mute-stream@0.0.6:
   version "0.0.6"
   resolved "http://localhost:8080/mute-stream/-/mute-stream-0.0.6.tgz#48962b19e169fd1dfc240b3f1e7317627bbc47db"
-
-mute-stream@0.0.5:
-  version "0.0.5"
-  resolved "http://localhost:8080/mute-stream/-/mute-stream-0.0.5.tgz#8fbfabb0a98a253d3184331f9e8deb7372fac6c0"
 
 najax@^0.7.0:
   version "0.7.1"
@@ -3764,7 +3729,7 @@ nopt@^3.0.1, nopt@^3.0.3, nopt@~3.0.6, "nopt@2 || 3":
   dependencies:
     abbrev "1"
 
-normalize-git-url@~3.0.1:
+normalize-git-url@~3.0.1, normalize-git-url@~3.0.2:
   version "3.0.2"
   resolved "http://localhost:8080/normalize-git-url/-/normalize-git-url-3.0.2.tgz#8e5f14be0bdaedb73e07200310aa416c27350fc4"
 
@@ -3929,9 +3894,9 @@ npm@~3.5.2:
     wrappy "~1.0.1"
     write-file-atomic "~1.1.4"
 
-npm@2.15.1:
-  version "2.15.1"
-  resolved "http://localhost:8080/npm/-/npm-2.15.1.tgz#1232b36de78a2129a7c91f69e47abb8f093308c2"
+npm@2.15.5:
+  version "2.15.5"
+  resolved "http://localhost:8080/npm/-/npm-2.15.5.tgz#5fcd71999c3d54baa0e1c27ac44f84a1b82b4559"
   dependencies:
     abbrev "~1.0.7"
     ansi "~0.3.1"
@@ -3939,7 +3904,7 @@ npm@2.15.1:
     ansistyles "~0.1.3"
     archy "~1.0.0"
     async-some "~1.0.2"
-    block-stream "0.0.8"
+    block-stream "0.0.9"
     char-spinner "~1.0.1"
     chmodr "~1.0.2"
     chownr "~1.0.1"
@@ -3948,50 +3913,50 @@ npm@2.15.1:
     config-chain "~1.1.10"
     dezalgo "~1.0.3"
     editor "~1.0.0"
-    fs-vacuum "~1.2.7"
+    fs-vacuum "~1.2.9"
     fs-write-stream-atomic "~1.0.8"
     fstream "~1.0.8"
     fstream-npm "~1.0.7"
     github-url-from-git "~1.4.0"
     github-url-from-username-repo "~1.0.2"
     glob "~7.0.3"
-    graceful-fs "~4.1.3"
+    graceful-fs "~4.1.4"
     hosted-git-info "~2.1.4"
     inflight "~1.0.4"
     inherits "~2.0.1"
     ini "~1.3.4"
     init-package-json "~1.9.3"
     lockfile "~1.0.1"
-    lru-cache "~3.2.0"
+    lru-cache "~4.0.1"
     minimatch "~3.0.0"
     mkdirp "~0.5.1"
     node-gyp "~3.3.1"
     nopt "~3.0.6"
-    normalize-git-url "~3.0.1"
+    normalize-git-url "~3.0.2"
     normalize-package-data "~2.3.5"
     npm-cache-filename "~1.0.2"
     npm-install-checks "~1.0.7"
     npm-package-arg "~4.1.0"
     npm-registry-client "~7.1.0"
     npm-user-validate "~0.1.2"
-    npmlog "~2.0.2"
+    npmlog "~2.0.3"
     once "~1.3.3"
     opener "~1.4.1"
     osenv "~0.1.3"
     path-is-inside "~1.0.0"
     read "~1.0.7"
     read-installed "~4.0.3"
-    read-package-json "~2.0.3"
-    readable-stream "~1.1.13"
-    realize-package-specifier "~3.0.1"
-    request "~2.69.0"
+    read-package-json "~2.0.4"
+    readable-stream "~2.1.2"
+    realize-package-specifier "~3.0.3"
+    request "~2.72.0"
     retry "~0.9.0"
     rimraf "~2.5.2"
     semver "~5.1.0"
     sha "~2.0.1"
     slide "~1.1.6"
-    sorted-object "~1.0.0"
-    spdx-license-ids "~1.2.0"
+    sorted-object "~2.0.0"
+    spdx-license-ids "~1.2.1"
     strip-ansi "~3.0.1"
     tar "~2.2.1"
     text-table "~0.2.0"
@@ -3999,7 +3964,7 @@ npm@2.15.1:
     umask "~1.1.0"
     validate-npm-package-license "~3.0.1"
     validate-npm-package-name "~2.2.2"
-    which "~1.2.4"
+    which "~1.2.8"
     wrappy "~1.0.1"
     write-file-atomic "~1.1.4"
 
@@ -4012,7 +3977,7 @@ npmlog@^4.0.0:
     gauge "~2.6.0"
     set-blocking "~2.0.0"
 
-npmlog@~2.0.0, npmlog@~2.0.2, "npmlog@0 || 1 || 2", "npmlog@0.1 || 1 || 2":
+npmlog@~2.0.0, npmlog@~2.0.3, "npmlog@0 || 1 || 2", "npmlog@0.1 || 1 || 2":
   version "2.0.4"
   resolved "http://localhost:8080/npmlog/-/npmlog-2.0.4.tgz#98b52530f2514ca90d09ec5b22c8846722375692"
   dependencies:
@@ -4120,6 +4085,10 @@ os-locale@^1.4.0:
   dependencies:
     lcid "^1.0.0"
 
+os-shim@^0.1.2:
+  version "0.1.3"
+  resolved "http://localhost:8080/os-shim/-/os-shim-0.1.3.tgz#6b62c3791cf7909ea35ed46e17658bb417cb3917"
+
 os-tmpdir@^1.0.0, os-tmpdir@^1.0.1, os-tmpdir@~1.0.1:
   version "1.0.2"
   resolved "http://localhost:8080/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
@@ -4180,6 +4149,12 @@ path-exists@^1.0.0:
   version "1.0.0"
   resolved "http://localhost:8080/path-exists/-/path-exists-1.0.0.tgz#d5a8998eb71ef37a74c34eb0d9eba6e878eea081"
 
+path-exists@^2.0.0:
+  version "2.1.0"
+  resolved "http://localhost:8080/path-exists/-/path-exists-2.1.0.tgz#0feb6c64f0fc518d9a754dd5efb62c7022761f4b"
+  dependencies:
+    pinkie-promise "^2.0.0"
+
 path-is-absolute@^1.0.0:
   version "1.0.1"
   resolved "http://localhost:8080/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
@@ -4218,7 +4193,7 @@ pkginfo@0.x.x:
   version "0.4.0"
   resolved "http://localhost:8080/pkginfo/-/pkginfo-0.4.0.tgz#349dbb7ffd38081fcadc0853df687f0c7744cd65"
 
-portfinder@^1.0.3:
+portfinder@^1.0.7:
   version "1.0.9"
   resolved "http://localhost:8080/portfinder/-/portfinder-1.0.9.tgz#b1ac8755d092afc0433f1c4832fa17d6d1f5d830"
   dependencies:
@@ -4305,9 +4280,9 @@ qs@~5.2.0:
   version "5.2.1"
   resolved "http://localhost:8080/qs/-/qs-5.2.1.tgz#801fee030e0b9450d6385adc48a4cc55b44aedfc"
 
-qs@~6.0.2:
-  version "6.0.2"
-  resolved "http://localhost:8080/qs/-/qs-6.0.2.tgz#88c68d590e8ed56c76c79f352c17b982466abfcd"
+qs@~6.1.0:
+  version "6.1.0"
+  resolved "http://localhost:8080/qs/-/qs-6.1.0.tgz#ec1d1626b24278d99f0fdf4549e524e24eceeb26"
 
 qs@5.2.0:
   version "5.2.0"
@@ -4317,19 +4292,11 @@ qs@6.2.0:
   version "6.2.0"
   resolved "http://localhost:8080/qs/-/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
 
-quick-temp@^0.1.2, quick-temp@^0.1.3, quick-temp@^0.1.5:
+quick-temp@^0.1.2, quick-temp@^0.1.3, quick-temp@^0.1.5, quick-temp@0.1.6:
   version "0.1.6"
   resolved "http://localhost:8080/quick-temp/-/quick-temp-0.1.6.tgz#a6242a15cba9f9cdbd341287b5c569e318eec307"
   dependencies:
     mktemp "~0.4.0"
-    rimraf "~2.2.6"
-    underscore.string "~2.3.3"
-
-quick-temp@0.1.5:
-  version "0.1.5"
-  resolved "http://localhost:8080/quick-temp/-/quick-temp-0.1.5.tgz#0d0d67f0fb6a589a0e142f90985f76cdbaf403f7"
-  dependencies:
-    mktemp "~0.3.4"
     rimraf "~2.2.6"
     underscore.string "~2.3.3"
 
@@ -4375,7 +4342,7 @@ read-installed@~4.0.3:
   optionalDependencies:
     graceful-fs "^4.1.2"
 
-read-package-json@^2.0.0, read-package-json@~2.0.2, read-package-json@~2.0.3, "read-package-json@1 || 2":
+read-package-json@^2.0.0, read-package-json@~2.0.2, read-package-json@~2.0.4, "read-package-json@1 || 2":
   version "2.0.4"
   resolved "http://localhost:8080/read-package-json/-/read-package-json-2.0.4.tgz#61ed1b2256ea438d8008895090be84b8e799c853"
   dependencies:
@@ -4401,7 +4368,7 @@ read@~1.0.1, read@~1.0.7, read@1, read@1.0.x:
   dependencies:
     mute-stream "~0.0.4"
 
-readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@^2.0.4, "readable-stream@1 || 2":
+readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@^2.0.4, readable-stream@~2.1.2, "readable-stream@1 || 2":
   version "2.1.5"
   resolved "http://localhost:8080/readable-stream/-/readable-stream-2.1.5.tgz#66fa8b720e1438b364681f2ad1a63c618448c9d0"
   dependencies:
@@ -4416,15 +4383,6 @@ readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2,
 readable-stream@~1.0.2:
   version "1.0.34"
   resolved "http://localhost:8080/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
-
-readable-stream@~1.1.13:
-  version "1.1.14"
-  resolved "http://localhost:8080/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
   dependencies:
     core-util-is "~1.0.0"
     inherits "~2.0.1"
@@ -4460,15 +4418,7 @@ readdir-scoped-modules@*, readdir-scoped-modules@^1.0.0:
     graceful-fs "^4.1.2"
     once "^1.3.0"
 
-readline2@^1.0.1:
-  version "1.0.1"
-  resolved "http://localhost:8080/readline2/-/readline2-1.0.1.tgz#41059608ffc154757b715d9989d199ffbf372e35"
-  dependencies:
-    code-point-at "^1.0.0"
-    is-fullwidth-code-point "^1.0.0"
-    mute-stream "0.0.5"
-
-realize-package-specifier@~3.0.1:
+realize-package-specifier@~3.0.1, realize-package-specifier@~3.0.3:
   version "3.0.3"
   resolved "http://localhost:8080/realize-package-specifier/-/realize-package-specifier-3.0.3.tgz#d0def882952b8de3f67eba5e91199661271f41f4"
   dependencies:
@@ -4574,7 +4524,7 @@ repeating@^1.1.0, repeating@^1.1.2:
   dependencies:
     is-finite "^1.0.0"
 
-request@^2.27.0, request@^2.47.0, request@2:
+request@^2.47.0, request@2:
   version "2.76.0"
   resolved "http://localhost:8080/request/-/request-2.76.0.tgz#be44505afef70360a0436955106be3945d95560e"
   dependencies:
@@ -4624,28 +4574,28 @@ request@~2.67.0:
     tough-cookie "~2.2.0"
     tunnel-agent "~0.4.1"
 
-request@~2.69.0:
-  version "2.69.0"
-  resolved "http://localhost:8080/request/-/request-2.69.0.tgz#cf91d2e000752b1217155c005241911991a2346a"
+request@~2.72.0:
+  version "2.72.0"
+  resolved "http://localhost:8080/request/-/request-2.72.0.tgz#0ce3a179512620b10441f14c82e21c12c0ddb4e1"
   dependencies:
     aws-sign2 "~0.6.0"
     aws4 "^1.2.1"
-    bl "~1.0.0"
+    bl "~1.1.2"
     caseless "~0.11.0"
     combined-stream "~1.0.5"
     extend "~3.0.0"
     forever-agent "~0.6.1"
     form-data "~1.0.0-rc3"
     har-validator "~2.0.6"
-    hawk "~3.1.0"
+    hawk "~3.1.3"
     http-signature "~1.1.0"
     is-typedarray "~1.0.0"
     isstream "~0.1.2"
     json-stringify-safe "~5.0.1"
     mime-types "~2.1.7"
     node-uuid "~1.4.7"
-    oauth-sign "~0.8.0"
-    qs "~6.0.2"
+    oauth-sign "~0.8.1"
+    qs "~6.1.0"
     stringstream "~0.0.4"
     tough-cookie "~2.2.0"
     tunnel-agent "~0.4.1"
@@ -4712,15 +4662,16 @@ rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.
   version "3.3.3"
   resolved "http://localhost:8080/rsvp/-/rsvp-3.3.3.tgz#34633caaf8bc66ceff4be3c2e1dffd032538a813"
 
-run-async@^0.1.0:
-  version "0.1.0"
-  resolved "http://localhost:8080/run-async/-/run-async-0.1.0.tgz#c8ad4a5e110661e402a7d21b530e009f25f8e389"
+run-async@^2.2.0:
+  version "2.2.0"
+  resolved "http://localhost:8080/run-async/-/run-async-2.2.0.tgz#8783abd83c7bb86f41ee0602fc82404b3bd6e8b9"
   dependencies:
-    once "^1.3.0"
+    is-promise "^2.1.0"
+    pinkie-promise "^2.0.0"
 
-rx-lite@^3.1.2:
-  version "3.1.2"
-  resolved "http://localhost:8080/rx-lite/-/rx-lite-3.1.2.tgz#19ce502ca572665f3b647b10939f97fd1615f102"
+rx@^4.1.0:
+  version "4.1.0"
+  resolved "http://localhost:8080/rx/-/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
 
 rxjs-es@^5.0.0-beta.9:
   version "5.0.0-beta.12"
@@ -4739,7 +4690,7 @@ sane@^1.1.1:
     walker "~1.0.5"
     watch "~0.10.0"
 
-"semver@^2.3.0 || 3.x || 4 || 5", semver@^5.1.0, "semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", "semver@4 || 5":
+"semver@^2.3.0 || 3.x || 4 || 5", semver@^5.1.0, semver@^5.1.1, "semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", "semver@4 || 5":
   version "5.3.0"
   resolved "http://localhost:8080/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
@@ -4903,6 +4854,10 @@ sorted-object@~1.0.0:
   version "1.0.0"
   resolved "http://localhost:8080/sorted-object/-/sorted-object-1.0.0.tgz#5d1f4f9c1fb2cd48965967304e212eb44cfb6d05"
 
+sorted-object@~2.0.0:
+  version "2.0.1"
+  resolved "http://localhost:8080/sorted-object/-/sorted-object-2.0.1.tgz#7d631f4bd3a798a24af1dffcfbfe83337a5df5fc"
+
 source-map-support@^0.2.10:
   version "0.2.10"
   resolved "http://localhost:8080/source-map-support/-/source-map-support-0.2.10.tgz#ea5a3900a1c1cb25096a0ae8cc5c2b4b10ded3dc"
@@ -4939,6 +4894,13 @@ spawn-args@^0.2.0:
   version "0.2.0"
   resolved "http://localhost:8080/spawn-args/-/spawn-args-0.2.0.tgz#fb7d0bd1d70fd4316bd9e3dec389e65f9d6361bb"
 
+spawn-sync@^1.0.15:
+  version "1.0.15"
+  resolved "http://localhost:8080/spawn-sync/-/spawn-sync-1.0.15.tgz#b00799557eb7fb0c8376c29d44e8a1ea67e57476"
+  dependencies:
+    concat-stream "^1.4.7"
+    os-shim "^0.1.2"
+
 spawnback@~1.0.0:
   version "1.0.0"
   resolved "http://localhost:8080/spawnback/-/spawnback-1.0.0.tgz#f73662f7e54d95367eca74d6426c677dd7ea686f"
@@ -4953,7 +4915,7 @@ spdx-expression-parse@~1.0.0:
   version "1.0.4"
   resolved "http://localhost:8080/spdx-expression-parse/-/spdx-expression-parse-1.0.4.tgz#9bdf2f20e1f40ed447fbe273266191fced51626c"
 
-spdx-license-ids@^1.0.2, spdx-license-ids@~1.2.0:
+spdx-license-ids@^1.0.2, spdx-license-ids@~1.2.1:
   version "1.2.2"
   resolved "http://localhost:8080/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
 
@@ -5101,7 +5063,7 @@ temp@0.8.3:
     os-tmpdir "^1.0.0"
     rimraf "~2.2.6"
 
-testem@^1.6.0:
+testem@^1.8.1:
   version "1.13.0"
   resolved "http://localhost:8080/testem/-/testem-1.13.0.tgz#441779b340afae4bd318d5c2be29b99d8964947f"
   dependencies:
@@ -5155,6 +5117,12 @@ tiny-lr@0.2.1:
     parseurl "~1.3.0"
     qs "~5.1.0"
 
+tmp@^0.0.29:
+  version "0.0.29"
+  resolved "http://localhost:8080/tmp/-/tmp-0.0.29.tgz#f25125ff0dd9da3ccb0c2dd371ee1288bb9128c0"
+  dependencies:
+    os-tmpdir "~1.0.1"
+
 tmp@0.0.28:
   version "0.0.28"
   resolved "http://localhost:8080/tmp/-/tmp-0.0.28.tgz#172735b7f614ea7af39664fa84cf0de4e515d120"
@@ -5191,7 +5159,7 @@ tough-cookie@~2.3.0:
   dependencies:
     punycode "^1.4.1"
 
-tree-sync@^1.1.0:
+tree-sync@^1.1.4:
   version "1.1.4"
   resolved "http://localhost:8080/tree-sync/-/tree-sync-1.1.4.tgz#6dd4f7fe5db35fcd86cac54bc844b260746b21b8"
   dependencies:
@@ -5378,7 +5346,7 @@ walk-sync@^0.1.3:
   version "0.1.3"
   resolved "http://localhost:8080/walk-sync/-/walk-sync-0.1.3.tgz#8a07261a00bda6cfb1be25e9f100fad57546f583"
 
-walk-sync@^0.2.5, walk-sync@^0.2.6, walk-sync@^0.2.7:
+walk-sync@^0.2.5, walk-sync@^0.2.7:
   version "0.2.7"
   resolved "http://localhost:8080/walk-sync/-/walk-sync-0.2.7.tgz#b49be4ee6867657aeb736978b56a29d10fa39969"
   dependencies:
@@ -5418,7 +5386,7 @@ websocket-extensions@>=0.1.1:
   version "0.1.1"
   resolved "http://localhost:8080/websocket-extensions/-/websocket-extensions-0.1.1.tgz#76899499c184b6ef754377c2dbb0cd6cb55d29e7"
 
-which@^1.0.5, which@^1.2.10, which@^1.2.9, which@~1.2.1, which@~1.2.4, which@1:
+which@^1.0.5, which@^1.2.10, which@^1.2.9, which@~1.2.1, which@~1.2.8, which@1:
   version "1.2.11"
   resolved "http://localhost:8080/which/-/which-1.2.11.tgz#c8b2eeea6b8c1659fa7c1dd4fdaabe9533dc5e8b"
   dependencies:
@@ -5521,13 +5489,12 @@ yallist@^2.0.0:
   version "2.0.0"
   resolved "http://localhost:8080/yallist/-/yallist-2.0.0.tgz#306c543835f09ee1a4cb23b7bce9ab341c91cdd4"
 
-yam@0.0.19:
-  version "0.0.19"
-  resolved "http://localhost:8080/yam/-/yam-0.0.19.tgz#261760b01754a5c3731a22a8df9a8cd7c9cceda6"
+yam@0.0.22:
+  version "0.0.22"
+  resolved "http://localhost:8080/yam/-/yam-0.0.22.tgz#38a76cb79a19284d9206ed49031e359a1340bd06"
   dependencies:
-    findup "^0.1.5"
-    fs-extra "^0.26.6"
-    lodash.merge "^3.0.2"
+    fs-extra "^0.30.0"
+    lodash.merge "^4.4.0"
 
 yargs@~3.10.0:
   version "3.10.0"

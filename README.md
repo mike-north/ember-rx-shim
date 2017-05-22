@@ -1,5 +1,7 @@
 # ember-rx-shim [![Build Status](https://travis-ci.org/mike-north/ember-rx-shim.svg?branch=master)](https://travis-ci.org/mike-north/ember-rx-shim)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-rx-shim.svg)](https://greenkeeper.io/)
+
 A simple addon for adding [RxJS 5](https://github.com/ReactiveX/rxjs#rxjs-5-beta) to your Ember.js app. 
 
 ### Purpose
